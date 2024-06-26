@@ -1,0 +1,24 @@
+{
+  "name": "qdx_assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "headless": "npx cypress run --browser chrome",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.12.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.7",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@faker-js/faker": "^8.4.1",
+    "cypress-fill-command": "^1.0.2",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "description": ""
+}
+
