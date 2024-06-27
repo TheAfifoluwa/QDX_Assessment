@@ -1,4 +1,4 @@
-# Cypress Framework with Mocha Reporter and Cucumber
+# Cypress Framework with Cypress Custom Commands and Cucumber
 
 This repository contains a Cypress framework that utilizes cypress custom commands and Cucumber for end-to-end (E2E) testing.
 
