@@ -1,6 +1,6 @@
 # Cypress Framework with Mocha Reporter and Cucumber
 
-This repository contains a Cypress framework that utilizes the Mocha reporter and Cucumber for end-to-end (E2E) testing.
+This repository contains a Cypress framework that utilizes cypress custom commands and Cucumber for end-to-end (E2E) testing.
 
 ## Table of Contents
 
@@ -11,8 +11,7 @@ This repository contains a Cypress framework that utilizes the Mocha reporter an
    - [Running Tests](#running-tests)
 3. [Test Structure](#test-structure)
    - [Cucumber Integration](#cucumber-integration)
-4. [Reporting](#reporting)
-   - [Mocha Reporter](#mocha-reporter)
+
 
 
 ## Prerequisites
@@ -26,7 +25,6 @@ This repository contains a Cypress framework that utilizes the Mocha reporter an
 
 - End-to-end (E2E) testing using Cypress
 - Custom commands for reusable functionality
-- Integration with the Mochawesome reporter for enhanced test reporting
 - Cucumber BDD (Behaviour-Driven Development)
 - Faker to generate random values
 
@@ -58,10 +56,7 @@ The tests in this framework are structured using the Cucumber BDD (Behavior-Driv
 ### Cucumber Integration
 Cucumber is integrated into the Cypress framework using the cypress-cucumber-preprocessor plugin. This allows you to write your test cases in a human-readable format using Gherkin syntax.
 
-## Reporting
 
-### Mocha Reporter
-This framework uses the Mocha reporter to generate detailed test reports. The reports are saved in the reports directory.
 
 
 

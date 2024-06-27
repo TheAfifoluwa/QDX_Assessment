@@ -1,5 +1,95 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "homePage":{
+  "homePageName": "div.col-md-4.header-section",
+  "inputFormButton": "#navbar-brand-centered > ul:nth-child(1) > li:nth-child(1) > a",
+  "simpleFormButton": "#navbar-brand-centered > ul:nth-child(1) > li.dropdown.open > ul > li:nth-child(1) > a",
+  "selectDropdownButton": "#navbar-brand-centered > ul:nth-child(1) > li.dropdown.open > ul > li:nth-child(4) > a",
+  "alertsAndModalsButton": "#navbar-brand-centered > ul.nav.navbar-nav.navbar-right > li:nth-child(2) > a",
+  "bootstrapAlertsButton": "#navbar-brand-centered > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li:nth-child(1) > a",
+  "bootstrapModalsButton": "#navbar-brand-centered > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li:nth-child(2) > a"
+},
+
+"simpleForm":{
+  "simpleFormHeader": "div.col-md-6.text-left > h3",
+  "singleInputHeader": "div:nth-child(4) > div.panel-heading",
+  "singleInputField": "#user-message",
+  "showMessageButton": "#get-input > button",
+  "confirmMessageText": "#user-message > labe",
+  "confirmMessageValue": "#display",
+  "multipleInputHeader": "div:nth-child(5) > div.panel-heading",
+  "firstInputField": "#value1",
+  "secondInputField": "#value2",
+  "getTotalButton": "#gettotal > button",
+  "confirmTotal": "div:nth-child(5) > div.panel-body > div > label",
+  "confirmTotalValue":"#displayvalue"
+},
+
+"dropdown":{
+  "dropdownHeader": "div.col-md-6.text-left > h3",
+  "selectListHeader": "div:nth-child(4) > div.panel-heading",
+  "selectListField": "#select-demo",
+  "selectListOption": "#select-demo > option:nth-child(2)",
+  "confirmSelection": "div.col-md-6.text-left > div:nth-child(4) > div.panel-body > p.selected-value",
+  "multiSelectListHeader": "div:nth-child(5) > div.panel-heading",
+  "SelectOptionOne": "#multi-select > option:nth-child(2)",
+  "SelectOptionTwo": "#multi-select > option:nth-child(3)",
+  "firstSelectedButton": "#printMe",
+  "getAllSelectedButton": "#printAll",
+  "firstSelectedMessage": "div.col-md-6.text-left > div:nth-child(5) > div.panel-body > p.getall-selected",
+  "getAllSelectedMessage": "div:nth-child(5) > div.panel-body > p.getall-selected"
+},
+
+"alerts":{
+  "alertHeader": "div.col-md-6.text-left > h2",
+  "autocloseableSuccessButton": "#autoclosable-btn-success",
+  "autocloseableSuccessMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-success.alert-autocloseable-success",
+  "normalSuccessButton": "#normal-btn-success",
+  "normalSuccessMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-success.alert-normal-success",
+  "normalSuccessClose": "div.col-md-6 > div.alert.alert-success.alert-normal-success > button",
+
+  "autocloseableWarningButton": "#autoclosable-btn-warning",
+  "autocloseableWarningMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-warning.alert-autocloseable-warning",
+  "normalWarningButton": "#normal-btn-warning",
+  "normalWarningMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-warning.alert-normal-warning",
+  "normalWarningClose": "div.alert.alert-warning.alert-normal-warning > button",
+
+  "autocloseableDangerButton": "#autoclosable-btn-danger",
+  "autocloseableDangerMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-danger.alert-autocloseable-danger",
+  "normalDangerButton": "#normal-btn-danger",
+  "normalDangerMessage": "div.col-md-6.text-left > div > div.col-md-6 > div.alert.alert-danger.alert-normal-danger",
+  "normalDangerClose": " div.alert.alert-danger.alert-normal-danger > button",
+
+  "autocloseableInfoButton": "#autoclosable-btn-info",
+  "autocloseableInfoMessage": "div.col-md-6 > div.alert.alert-info.alert-autocloseable-info",
+  "normalInfoButton": "#normal-btn-info",
+  "normalInfoMessage": " div.col-md-6 > div.alert.alert-info.alert-normal-info",
+  "normalInfoClose": "div.alert.alert-info.alert-normal-info > button"
+
+},
+
+
+
+"modals":{
+  "modalHeader": "div.col-md-6.text-left > h2",
+  "singleModalHeader": "div:nth-child(2) > div > div > div.panel-heading",
+  "singleModalButton": "div:nth-child(2) > div > div > div.panel-body > a",
+  "singleModalMessage": "#myModal0 > div > div > div.modal-body",
+  "singleModalCloseButton": "#myModal0 > div > div > div.modal-footer > a:nth-child(1)",
+  "singleModalSaveButton": "#myModal0 > div > div > div.modal-footer > a.btn.btn-primary",
+  "singleModalCancelIcon": "#myModal0 > div > div > div.modal-header > button",
+
+  "multiModalHeader": "div.col-md-6.text-left > div:nth-child(3) > div > div > div.panel-heading",
+  "multiModalButton": "div.col-md-6.text-left > div:nth-child(3) > div > div > div.panel-body > a",
+  "multiModalMessage": "#myModal > div > div > div.modal-body",
+
+  "multiModalChildButton": "#myModal > div > div > div.modal-body > a",
+  "multiModalChildMessage": "#myModal2 > div > div > div.modal-body",
+  "modalChildCloseButton": "#myModal2 > div > div > div.modal-footer > a:nth-child(1)",
+  "modalChildSaveButton": "#myModal2 > div > div > div.modal-footer > a.btn.btn-primary",
+  "modalChildCancelIcon": "#myModal2 > div > div > div.modal-header > button",
+
+  "multiModalCloseButton": "#myModal > div > div > div.modal-footer > a:nth-child(1)",
+  "multiModalSaveButton": "#myModal > div > div > div.modal-footer > a.btn.btn-primary",
+  "multiModalCancelIcon": "#myModal > div > div > div.modal-header > button"
+}
 }
